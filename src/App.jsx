@@ -8,10 +8,7 @@ import { MarkdownRenderer, CodeOutputRenderer, JupyterNotebookContentViewer } fr
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 // --- SUPABASE SETUP ---
-// NOTE: It's best practice to use environment variables for these keys.
-const supabaseUrl = 'https://amepwiogiucmuqynxgrb.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFtZXB3aW9naXVjbXVxeW54Z3JiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI4MjQ2OTgsImV4cCI6MjA2ODQwMDY5OH0.-y2hIxFXch3nW8WnXRp0iPEKRUov7jAhczrbmK9o8-o';
-const supabase = createClient(supabaseUrl, supabaseKey);
+
 
 // --- NOTEBOOK ANALYSIS LOGIC (with fallback) ---
 const localNotebookAnalysis = (notebookContent) => {
